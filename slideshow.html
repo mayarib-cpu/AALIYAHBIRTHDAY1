@@ -22,17 +22,15 @@
     </div>
 
     <script>
-        window.onload = function() {
-            setTimeout(() => {
-                let gallery = document.querySelector('.pa-gallery-player-widget');
-                if (gallery) {
-                    gallery.style.visibility = "visible";
-                } else {
-                    console.error("Gallery element not found!");
-                }
-            }, 2000); // Delay to ensure the script loads properly
-        };
-    </script>
+  window.onload = function () {
+    const gallery = document.querySelector(".pa-gallery-player-widget");
+    if (gallery) {
+      gallery.style.display = "block"; // Ensure it's visible
+    } else {
+      console.error("Gallery not found. Check if the embed script is loading properly.");
+    }
+  };
+</script>
 
 </body>
 </html>
